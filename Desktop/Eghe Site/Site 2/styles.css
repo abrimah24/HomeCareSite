@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+	 background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: #eef3f7; 
+    font-family:  Merriweather;
+}
+* {box-sizing: border-box;}
+
+/*body {
+    background-size:cover;
+    background-color: white; font-family: Arial, Helvetica, sans-serif;
+}*/
+
+br {
+   display: block;
+   margin: 100px ;
+}
+/*img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+/* Create two columns/boxes that floats next to each other */
+nav.hi {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav.hi ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* this is for the image transitions */
+
+.container{
+	background-color:;
+	overflow: hidden;
+}
+
+.container3 {
+  position: relative;
+  width: 33.3%;
+   padding: 25px ;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6495ED;
+}
+
+.container3:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family:  Georgia;
+  position: relative;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* Used for words on slide show */
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav.mid {
+    float: left;
+    width: 50%;
+    height: 400px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 40px;
+    opacity: 80%;
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav.mid, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+h1 {
+    color: ;
+    font-size: 60px;
+}
+
+h1.p {
+    color: #6495ED;
+}
+h2 {
+    color: black;
+    font-family: sans-serif;
+}
+h3 {
+    color: #90afff;
+    font-family: sans-serif;
+}
+p {
+	font-family: Merriweather;
+    color: black;
+    padding: -1;
+}
+
+.p3{
+    font-family: 'Barlow';font-size: 22px;
+}
+h5{
+	font-family: Garamond;
+}
+li{font-family: Merriweather;
+font-size: 20px;}
+
+
+header {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    border: 1px solid black; 
+    padding: 35px 70px 50px 90px;
+    opacity: .8;
+}
+
+ #content {
+        text-align: center;
+      }
+ #content ul {
+        text-align: left;
+        display: inline-block;
+        font-size: 150%;
+        list-style-type: none;
+        margin: 20px auto;
+        padding: 0px;
+        border: solid 1px #666666;
+      }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+	 font-size: 17px;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: #90afff;
+    padding: 10px;
+}
+
+.container4 {
+  position: relative;
+  width: 33.3%;
+   padding: 25px ;
+} 
+
+.main {
+	background-color:#f1f1f1;
+  min-height: 300px;
+  overflow: hidden;
+}
+/* -------------Left to right-------------*/
+#column2{
+	background-color: ;
+	width: 690px;
+	min-height: 300px; 
+	margin: 0px auto;
+	float: right;
+	overflow: hidden;
+
+}
+
+#sidebar2{
+	background-color: ;
+	min-height: 300px;
+	margin-right: 690px;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* -----------right to left---------------*/
+#column1{
+	background-color: ;
+	width: 690px;
+	min-height: 300px; 
+	margin: 0px auto;
+	float: left;
+	overflow: hidden;
+
+}
+
+#sidebar{
+	background-color: ;
+	min-height: 300px;
+	margin-left: 690px;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+
+.right {
+  padding-top: 10;
+  float:right;
+  width:20%;
+  padding:15px;
+  margin-top:10px;
+  text-align:center;
+}
+
+.img1 {
+  border-radius: 20%;
+  float: right;   
+  margin-top:10px;
+  padding-right: 10px;
+}
+
+.main2 {
+	background-color:#f1f1f1;
+  float:left;
+  width:60%;
+  padding: 20px;
+  opacity: .6;
+}
+
+.right2 {
+  background-color:#e5e5e5;
+  float:left;
+  width:40%;
+  padding:15px;
+  margin-top:0px;
+  text-align:center;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+/*-----------------------contact us ---------------------*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
